@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>
+            Hamid's Portfolio
+        </title>
+        <body>
+            <!--<p>Hello, World!</p>-->
+            <main>
+                <header>
+                    <nav class="topnav" id="portfolioTopnav">
+                        <a href="#contact">Contact</a>
+                        <a href="#accomplishments">Accomplishments</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#about">About</a>
+                        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+                      </nav>
+                </header>
+                
+                <!--name-->
+                <header>
+                    <h1>Hamidreza Rafizadeh</h1>
+                </header>
+                <div id="aboutsection">
+                    <a href="https://www.qut.edu.au/research/e-grad-school" target="_blank">
+                        <!--image-->
+                        <figure>
+                            <img src="IMG_8672.jpg" alt="Hamid" widht="250" height="250"/></a>
+                            <figcaption>In ManaM!</figcaption>
+                        </figure>
+                        
+                    <!--about section-->
+                    <h2 id = "about" class = "heading uppercase">About</h2>
+                    <div>
+                        <p>I'm a Phd student at <strong>QUT</strong> exploring the role of <strong>AI</strong>
+                        in <em>robotic fabrication.</em></p>
+                    </div>
+                    <h2 id = "Skills">Skills</h2>
+                        <h4>Research Skills</h4>
+                            <ul class="list">
+                                <li>Systematic review</li>
+                                <li>Report writing</li>
+                                <li>Data collection</li>
+                            </ul>
+                        <h4>Interpersonal Skills</h4>
+                            <ul class="list">
+                                <li>Project management</li>
+                                <li>Leadership</li>
+                                <li>Active listening</li>
+                            </ul>
+                        <h4>Technical Skills</h4>
+                            <ul class="list">
+                                <li>Python programming</li>
+                                <li>machine learning</li>
+                                <li>Robot programming (UR10)</li>
+                            </ul>
+                </div>
+                <div id="accomplishmentssection">
+                    <!--accomplishments section-->
+                    <h2 id = "Accomplishments">Accomplishments</h2>
+                    <table>
+                        <!--first row-->
+                        <tr>
+                            <th scope="col">Publications</th>
+                            <th scope="col">Presentations</th>
+                            <th scope="col">Awards</th>
+                        </tr>
+                        <!--second row-->
+                        <tr>
+                            <td>NA</td>
+                            <td>NA</td>
+                            <td>QUTPRA Scholarship</td>
+                        </tr>
+                        <!--third row-->
+                        <tr>
+                            <td>NA</td>
+                            <td>NA</td>
+                            <td>Building 4.0 CRC Sholarship</td>  
+                        </tr>
+                    </table>
+                </div>
+                <h3>Coding Examples</h3>
+                <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+                <div id="contactsection">
+                    <!--contact section-->
+                    <h2 id = "Contact" class = "contactform">Contact</h2>
+                    <div>
+                        <a href="https://www.linkedin.com/in/hamidreza-rafizadeh-05b126a3/">LinkedIn</a>
+                        <br>
+                        <a href="https://scholar.google.com.au/citations?user=Nv3f9EMAAAAJ&hl=en" target = "_blank">
+                            Google Scholar</a>
+                    </div>
+                
+                    <br>
+                    <br>
+                    <form>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" name="name" id="name" required>
+                        <br>
+                        <br>
+                        <label for="email">E-Mail</label>
+                        <br>
+                        <input type="text" name="email" id="email" 
+                        required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <br>
+                        <br>
+                        <label for="mobile">Mobile(Optional)</label>
+                        <br>
+                        <input type="tel" name="mobile" id="mobile" pattern="[0-9] {10,16}">
+                        <br>
+                        <br>
+                        <label for="message">leave your message below</label>
+                        <br>
+                        <textarea id="message" name="message" rows="5" and cols="30"></textarea>
+                        <!--<button>Sign up</button>-->
+                        <br>
+                        <br>
+                        <input type="submit" value="send">
+                    </form>
+                </div>
+            </main>
+            <script src="./nav.js"></script>
+        </body>
+    </head>
+</html>
